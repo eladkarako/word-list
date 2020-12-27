@@ -1,0 +1,31 @@
+<!doctype html>
+<html tabindex="1" encoding="UTF-8" charset="UTF-8" dir="ltr" lang="en-US" language="English" prefix="og: http://ogp.me/ns#" itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="fragment"              content="!"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Cache-Control"   content="public,max-age=1800,max-stale,stale-while-revalidate=86400,stale-if-error=259200" rem="max-age=30minutes" />
+  <link rel="preload"                href="WORD_LIST.js" as="script" />
+  <meta name="viewport"              content="height=device-height,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,minimal-ui,shrink-to-fit=yes" />
+  <meta name="robots"                content="archive,follow,imageindex,index,odp,snippet,translate" />
+  <meta name="format-detection"      content="telephone=no,date=no,address=no,email=no,url=no" />
+  <style type="text/css" charset="UTF-8" media="all">
+    html,body,textarea{text-align:center; margin:0px; padding:0; height:100%; width:100%; border:none; outline:none;}
+    textarea{display:block; resize:none;}
+    html,textarea{font-family:sans-serif; font-size:30pt; font-size:16vmin;}
+  </style>
+  <title>Refresh For More</title>
+</head>
+<body tabindex="-1"><textarea></textarea><script src="WORD_LIST.js"></script><script>
+  var MAX   = 3
+     ,SAP   = "."
+     ,value = []
+     ;
+  for(var index=0; index<MAX; index++){
+    value.push(  WORD_LIST[ Math.floor(WORD_LIST.length * Math.random()) ]  );
+  }
+
+  document.querySelector("textarea").value = value.join(SAP);
+</script>
+</body>
+</html>
